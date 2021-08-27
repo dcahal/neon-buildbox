@@ -12,7 +12,7 @@ RUN apt-get update && \
     echo "resolvconf resolvconf/linkify-resolvconf boolean false" | debconf-set-selections && \
     apt-get update && \
     apt-get full-upgrade -y && \
-    apt-get install -y cmake build-essential devscripts vim xbuilder && \
+    apt-get install -y cmake build-essential devscripts vim tmux xbuilder && \
     mkdir -p usr/share/locale && \
     touch usr/share/locale/stub
     
